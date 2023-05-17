@@ -1,0 +1,15 @@
+assemble:
+    - from: build/static
+      into: static
+create-product-form:
+    cssURLs:
+        - css/main.*.css
+    friendlyURLMapping: create-product-form
+    htmlElementName: create-product-form
+    instanceable: false
+    name: Create Product Form
+    portletCategoryName: category.client-extensions
+    type: customElement
+    urls:
+        - js/main.*.js
+    useESM: true

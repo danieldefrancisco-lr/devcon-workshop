@@ -1,0 +1,9 @@
+{
+    "private": true,
+    "workspaces": {
+        "packages": [
+            "client-extensions\\create-product-form",
+            "client-extensions\\liferay-sample-custom-element-2"
+        ]
+    }
+}
