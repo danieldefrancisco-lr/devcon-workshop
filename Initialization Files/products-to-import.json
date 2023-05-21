@@ -39,7 +39,7 @@
 		},
 		"skuFormatted": "T-MADONE",
 		"skus":[ 
-				{"sku":"T-MADONE","price":9500,"published":true,"externalReferenceCode": "8ff48406-867b-62bd-f31b-e2f61cbedea4"}
+				{"sku":"T-MADONE","price":9500,"published":true,"externalReferenceCode": "8ff48406-867b-62bd-f31b-e2f61cbedea4","purchasable": true}
 		
 		],
 		"tags": [],
@@ -99,7 +99,7 @@
 			"en_US": ""
 		},
 		"skus":[ 
-				{"sku":"binfinito","price":5575,"published":true,"externalReferenceCode": "binfinito-xxxxrtt"}
+				{"sku":"binfinito","price":5575,"published":true,"externalReferenceCode": "binfinito-xxxxrtt","purchasable": true}
 		
 		],
 		"tags": [],
