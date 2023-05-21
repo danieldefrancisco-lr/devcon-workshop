@@ -15,8 +15,11 @@
     "@clayui/table": "3.56.0",
     "@clayui/form": "3.89.0",
     "@clayui/date-picker": "3.84.0",
-    "@clayui/slider": "3.89.0",
-    "@clayui/button": "3.92.0"
+    "@clayui/slider": "3.95.0",
+    "@clayui/button": "3.92.0",
+    "@mui/material": "latest",
+    "@emotion/styled": "latest",
+    "@emotion/react": "latest"
   },
   "scripts": {
     "start": "react-scripts start",

@@ -5,6 +5,7 @@ import {ClaySelect} from '@clayui/form';
 import ClayForm, {ClayInput} from '@clayui/form';
 import ClaySlider from '@clayui/slider';
 import ClayButton from '@clayui/button';
+import Slider from '@mui/material/Slider';
 
 
 
@@ -114,7 +115,8 @@ function AppClay(props) {
 				categories: [{id: manufacturer}],
 				productChannelFilter: "true",
 				productChannels : [{channelId:props.channelId, id: props.channelId}],
-				skus:[{price:sellprice, sku:model+serialNumber, published:"true"}]
+				skus:[{price:sellprice, sku:model+serialNumber, published:"true"}],
+				customFields:[{name:"Vendor Email",customValue:{data:email}},{name:"Vendor Name",customValue:{data:name}}]
 			  }),
 			method: 'POST',
 			headers: [
@@ -268,9 +270,23 @@ function AppClay(props) {
 			</ClayForm.Group>
 
 			<ClayForm.Group className="form-group-sm">
+				{/*
 			  <label htmlFor="sellprice">Price</label>
 			  <ClaySlider defaultValue={100} id="sellprice" max={10000} step={50} onChange={(e) => setSellprice(e.value)}/>
 			  <h3>{sellprice}€</h3>
+						*/}
+			  <label htmlFor="sellprice">Price</label>
+			  <Slider
+			    id="sellprice"
+				aria-label="Price"
+				defaultValue={80}
+				marks
+				step={10}
+				min={10}
+				max={12000}
+				valueLabelDisplay="on"
+				onChange={(event, value) => setSellprice(value)}
+      			/>
 			</ClayForm.Group>
 
 			<ClayForm.Group className="form-group-sm">
